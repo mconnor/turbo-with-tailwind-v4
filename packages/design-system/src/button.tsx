@@ -75,7 +75,7 @@ export function Button({ children, href, variant, color }: ButtonProps) {
     <a
       className={cn(
         buttonStyles({ variant, color }),
-        "flex justify-center items-center",
+        "flex items-center justify-center",
       )}
       href={href}
       rel="noopener noreferrer"

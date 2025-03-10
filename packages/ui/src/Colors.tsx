@@ -101,13 +101,13 @@ export function Colors({ secondary }: { secondary?: boolean }) {
       {colorValues.map((color) => {
         return (
           <div key={color.label} className="flex">
-            <div className={cn("w-full h-16", color.class)}></div>
+            <div className={cn("h-16 w-full", color.class)}></div>
             <div
               className={cn([
                 "flex",
                 "justify-center",
                 "items-center",
-                "bg-black text-white w-20",
+                "w-20 bg-black text-white",
               ])}
             >
               <p className="text-white">{color.label}</p>
