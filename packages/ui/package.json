@@ -16,7 +16,8 @@
     "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "lint": "eslint src/",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "format": "prettier . --write"
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -26,6 +27,8 @@
     "@turbo-with-tailwind-v4/typescript-config": "workspace:*",
     "@types/react": "^19.0.10",
     "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.8.2"
   },
   "dependencies": {

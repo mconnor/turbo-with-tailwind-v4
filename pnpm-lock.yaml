@@ -66,6 +66,12 @@ importers:
       '@types/react-dom':
         specifier: ^19.0.4
         version: 19.0.4(@types/react@19.0.10)
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.11
+        version: 0.6.11(prettier@3.5.3)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -147,6 +153,12 @@ importers:
       eslint:
         specifier: ^9.22.0
         version: 9.22.0(jiti@2.4.2)
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.11
+        version: 0.6.11(prettier@3.5.3)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -187,6 +199,12 @@ importers:
       eslint:
         specifier: ^9.22.0
         version: 9.22.0(jiti@2.4.2)
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.11
+        version: 0.6.11(prettier@3.5.3)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
