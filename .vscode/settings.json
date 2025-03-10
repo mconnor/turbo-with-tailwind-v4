@@ -6,5 +6,8 @@
   ],
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "/Users/mikeconnor/.local/share/mise/shims/node"
   }
 }

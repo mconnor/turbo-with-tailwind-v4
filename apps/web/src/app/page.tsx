@@ -1,6 +1,6 @@
-import { Colors } from "@turbo-with-tailwind-v4/ui/Colors"
-import { Button } from "@turbo-with-tailwind-v4/design-system/Button"
-import { FaGithub, FaMedium } from "react-icons/fa"
+import { Colors } from "@turbo-with-tailwind-v4/ui/Colors";
+import { Button } from "@turbo-with-tailwind-v4/design-system/Button";
+import { FaGithub, FaMedium } from "react-icons/fa";
 
 export default function Page() {
   return (
@@ -44,5 +44,5 @@ export default function Page() {
         </div>
       </div>
     </main>
-  )
+  );
 }

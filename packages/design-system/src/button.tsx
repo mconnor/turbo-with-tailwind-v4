@@ -1,5 +1,5 @@
-import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "@turbo-with-tailwind-v4/utils/cn"
+import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "@turbo-with-tailwind-v4/utils/cn";
 
 const buttonStyles = cva(
   ["rounded-lg", "px-8", "py-2", "transition-all", "font-medium"],
@@ -62,12 +62,12 @@ const buttonStyles = cva(
       variant: "contained",
       color: "primary",
     },
-  }
-)
+  },
+);
 
 interface ButtonProps extends VariantProps<typeof buttonStyles> {
-  children: React.ReactNode
-  href: string
+  children: React.ReactNode;
+  href: string;
 }
 
 export function Button({ children, href, variant, color }: ButtonProps) {
@@ -75,7 +75,7 @@ export function Button({ children, href, variant, color }: ButtonProps) {
     <a
       className={cn(
         buttonStyles({ variant, color }),
-        "flex justify-center items-center"
+        "flex justify-center items-center",
       )}
       href={href}
       rel="noopener noreferrer"
@@ -83,5 +83,5 @@ export function Button({ children, href, variant, color }: ButtonProps) {
     >
       {children}
     </a>
-  )
+  );
 }

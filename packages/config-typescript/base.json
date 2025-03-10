@@ -20,5 +20,16 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "exclude": ["node_modules"]
+    "include": [
+      "${configDir}/**/*"
+    ],
+    "exclude": [
+      "${configDir}/node_modules",
+      "${configDir}/.astro",
+      "${configDir}/dist",
+      "${configDir}/.turbo",
+      "${configDir}/.vercel",
+      "${configDir}/.next",
+      "${configDir}/cache-directory"
+    ]
 }

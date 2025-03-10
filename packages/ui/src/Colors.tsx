@@ -1,4 +1,4 @@
-import { cn } from "@turbo-with-tailwind-v4/utils/cn"
+import { cn } from "@turbo-with-tailwind-v4/utils/cn";
 
 const colorsPrimary = [
   {
@@ -45,7 +45,7 @@ const colorsPrimary = [
     label: 950,
     class: "bg-primary-950",
   },
-]
+];
 
 const colorsSecondary = [
   {
@@ -92,10 +92,10 @@ const colorsSecondary = [
     label: 950,
     class: "bg-secondary-950",
   },
-]
+];
 
 export function Colors({ secondary }: { secondary?: boolean }) {
-  const colorValues = secondary ? colorsSecondary : colorsPrimary
+  const colorValues = secondary ? colorsSecondary : colorsPrimary;
   return (
     <div>
       {colorValues.map((color) => {
@@ -113,8 +113,8 @@ export function Colors({ secondary }: { secondary?: boolean }) {
               <p className="text-white">{color.label}</p>
             </div>
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
