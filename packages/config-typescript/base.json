@@ -25,7 +25,6 @@
     ],
     "exclude": [
       "${configDir}/node_modules",
-      "${configDir}/.astro",
       "${configDir}/dist",
       "${configDir}/.turbo",
       "${configDir}/.vercel",

@@ -6,11 +6,14 @@ import pluginReact from "eslint-plugin-react";
 import globals from "globals";
 import { config as baseConfig } from "./base.mjs";
 import ignoresConfig from "./ignores.config.mjs";
+
+import { defineConfig } from "eslint/config";
+
 /**
  * A custom ESLint configuration for libraries that use React.
  *
  * @type {import("eslint").Linter.Config} */
-export const config = [
+export default defineConfig([
   ignoresConfig,
   ...baseConfig,
   js.configs.recommended,
@@ -37,4 +40,13 @@ export const config = [
       "react/react-in-jsx-scope": "off",
     },
   },
-];
+]);
+
+// export default defineConfig([
+//   {
+//     files: ["src/**/*.js"],
+//     rules: {
+//       semi: "error",
+//     },
+//   },
+// ]);

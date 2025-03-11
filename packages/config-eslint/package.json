@@ -2,15 +2,18 @@
   "name": "@turbo-with-tailwind-v4/eslint-config",
   "version": "0.0.2",
   "private": true,
-    "imports": {
-      "#*": "./*"
-    },
-      "exports": {
-        "./*": "./*.mjs",
-        "./react-internal": "./react.mjs",
-        "./ts-lint": "./ts-lint.mjs",
-        "./next-lint": "./next.mjs"
-      },
+  "imports": {
+    "#*": "./*"
+  },
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "exports": {
+    "./*": "./*.mjs",
+    "./react-internal": "./react.mjs",
+    "./ts-lint": "./ts-lint.mjs",
+    "./next-lint": "./next.mjs"
+  },
   "devDependencies": {
     "@vercel/style-guide": "^6.0.0",
     "@eslint/js": "^9.22.0",
@@ -23,6 +26,6 @@
     "eslint-plugin-turbo": "^2.4.4",
     "globals": "^16.0.0",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.0"
+    "typescript-eslint": "^8.26.1"
   }
 }
