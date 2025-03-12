@@ -6,6 +6,7 @@ export default defineConfig({
   dts: true,
   splitting: false,
   sourcemap: true,
+  clean: false,
   external: ["react"],
   outDir: "dist",
   esbuildOptions(options) {
