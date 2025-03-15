@@ -1,8 +1,12 @@
 # Turborepo with Tailwind CSS v4
 
-This is an example setup for a mono repository using Tailwind CSS version 4 - forked from (philipptpunkt/turbo-with-tailwind-v4). 
+This is an example setup for a mono repository using Tailwind CSS version 4 - forked from [philipptpunkt](https://github.com/philipptpunkt/turbo-with-tailwind-v4)
 
-My additions - using tsup to bundle
+My additions 
+- using tsup to bundle/transpile packages in the monorepo.
+- tweaking the eslint package
+
+
 
 ## What's inside?
 
@@ -37,5 +41,5 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
-- [philipptpunkt](https://github.com/philipptpunkt/turbo-with-tailwind-v4)
+- 
 - [tsup](https://github.com/egoist/tsup)

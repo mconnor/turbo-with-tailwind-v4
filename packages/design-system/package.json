@@ -18,9 +18,9 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css && tsup",
+    "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css && tsup",
     "lint": "eslint src/",
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css --watch",
     "type-check": "tsc --noEmit",
     "format": "prettier . --write"
   },
