@@ -1,16 +1,45 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "React Library",
-  "extends": "./base.json",
   "compilerOptions": {
+  "declaration": true,
+  "declarationMap": true,
+  "esModuleInterop": true,
+  "incremental": false,
+  "isolatedModules": true,
   "lib": [
     "es2022",
     "DOM",
     "DOM.Iterable"
   ],
+  "allowImportingTsExtensions": true,
+  "moduleDetection": "force",
+  "module": "ESNext",
+  "noEmit": true,
+  "moduleResolution": "Bundler",
+  "noUncheckedIndexedAccess": true,
+  "resolveJsonModule": true,
+  "skipLibCheck": true,
+  "strict": true,
   "target": "ES2022",
-    "jsx": "react-jsx",
-    "noEmit": true
-  }
+  "jsx": "react-jsx"
+  },
+  "include": [
+    "${configDir}/*.d.ts",
+    "${configDir}/src/**/*.ts",
+    "${configDir}/src/**/*.tsx",
+    "${configDir}/src/**/*.tsx",
+    "${configDir}/src/*.mjs"
+  ],
+  "exclude": [
+    "${configDir}/node_modules",
+    "${configDir}/.astro",
+    "${configDir}/dist",
+    "${configDir}/build",
+    "${configDir}/.turbo",
+    "${configDir}/.vercel",
+    "${configDir}/.next",
+    "${configDir}/cache-directory"
+  ]
 }
 
