@@ -1,4 +1,4 @@
-import { cn } from "@turbo-with-tailwind-v4/utils/cn";
+import { cn } from "@repo/utils/cn";
 
 const colorsPrimary = [
   {
@@ -102,14 +102,7 @@ export function Colors({ secondary }: { secondary?: boolean }) {
         return (
           <div key={color.label} className="flex">
             <div className={cn("h-16 w-full", color.class)}></div>
-            <div
-              className={cn([
-                "flex",
-                "justify-center",
-                "items-center",
-                "w-20 bg-black text-white",
-              ])}
-            >
+            <div className="mt-4">
               <p className="text-white">{color.label}</p>
             </div>
           </div>

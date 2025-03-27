@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@turbo-with-tailwind-v4/utils/cn";
+import { cn } from "@repo/utils/cn";
 
 const buttonStyles = cva(
   ["rounded-lg", "px-8", "py-2", "transition-all", "font-medium"],
