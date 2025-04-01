@@ -1,27 +1,29 @@
 ---
-import '../styles/global.css';
+import Layout from "#layouts/main.astro";
+import Colors from "@repo/ui/Colors";
 // Component Imports
-import Button from '../components/Button.astro';
+import Button from "@repo/design-system/Button";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro + TailwindCSS</title>
-  </head>
-
-  <body>
-    <div class="grid place-items-center h-screen content-center">
-      <Button>Tailwind Button in Astro!</Button>
-      <a href="/markdown-page" class="p-4 underline"
-        >Markdown is also supported...</a
-      >
+<Layout>
+  <div class="grid w-max place-items-center content-center">
+    <Button href="#" color="secondary">Tailwind Button in Astro!</Button>
+    <a href="/markdown-page" class="p-4 underline"
+      >Markdown is also supported...</a
+    >
+    <h2>Duis aliquip enim esse do officia occaecat.</h2>
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full">
+        <p class="bg-black p-4 text-white">Custom Primary Colors</p>
+        <Colors />
+      </div>
+      <div class="w-full">
+        <p class="bg-black p-4 text-white">Custom Secondary Colors</p>
+        <Colors secondary />
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</Layout>

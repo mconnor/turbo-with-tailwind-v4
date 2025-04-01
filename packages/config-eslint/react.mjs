@@ -1,13 +1,13 @@
-import js from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import tseslint from 'typescript-eslint';
-import pluginReactHooks from 'eslint-plugin-react-hooks';
-import pluginReact from 'eslint-plugin-react';
-import globals from 'globals';
-import { config as baseConfig } from './base.mjs';
-import ignoresConfig from './ignores.config.mjs';
+import js from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
+import tseslint from "typescript-eslint";
+import pluginReactHooks from "eslint-plugin-react-hooks";
+import pluginReact from "eslint-plugin-react";
+import globals from "globals";
+import { config as baseConfig } from "./base.mjs";
+import ignoresConfig from "./ignores.config.mjs";
 
-import { defineConfig } from 'eslint/config';
+import { defineConfig } from "eslint/config";
 
 /**
  * A custom ESLint configuration for libraries that use React.
@@ -31,13 +31,13 @@ export default defineConfig([
   },
   {
     plugins: {
-      'react-hooks': pluginReactHooks,
+      "react-hooks": pluginReactHooks,
     },
-    settings: { react: { version: 'detect' } },
+    settings: { react: { version: "detect" } },
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
       // React scope no longer necessary with new JSX transform.
-      'react/react-in-jsx-scope': 'off',
+      "react/react-in-jsx-scope": "off",
     },
   },
 ]);

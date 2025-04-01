@@ -66,12 +66,6 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-text);
 
-    @variant md {
-      font-size: var(--text-4xl);
-    }
-
-    @variant lg {
-      font-size: var(--text-5xl);
-    }
+ 
   }
 }

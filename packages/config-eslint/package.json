@@ -14,10 +14,12 @@
     "./astro-lint": "./astro-lint.mjs",
     "./react-internal": "./react.mjs",
     "./ts-lint": "./ts-lint.mjs",
-    "./next-lint": "./next.mjs"
+    "./next-lint": "./next.mjs",
+    "./md-lint": "./md.lint.config.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
+    "@eslint/markdown": "^6.3.0",
     "@logux/eslint-config": "^55.2.0",
     "@next/eslint-plugin-next": "^15.2.4",
     "@vercel/style-guide": "^6.0.0",

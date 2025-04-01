@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-const { content } = Astro.props;
+import Style from "#styles/Style.astro";
+
 ---
 
 <html lang="en">
@@ -8,7 +8,8 @@ const { content } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{content.title}</title>
+    <title>xxx</title>
+    <Style />
   </head>
   <body>
     <slot />

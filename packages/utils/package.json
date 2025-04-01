@@ -2,6 +2,9 @@
   "name": "@repo/utils",
   "version": "1.0.0",
   "private": true,
+  "imports": {
+    "#*": "./src/*"
+  },
   "exports": {
     "./cn": "./src/cn.ts"
   },

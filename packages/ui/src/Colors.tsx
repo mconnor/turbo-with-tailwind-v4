@@ -1,6 +1,5 @@
 import { cn } from "@repo/utils/cn";
 
-
 const colorsPrimary = [
   {
     label: 50,
@@ -98,18 +97,18 @@ const colorsSecondary = [
 function Colors({ secondary }: { secondary?: boolean }) {
   const colorValues = secondary ? colorsSecondary : colorsPrimary;
   return (
-    <div>
+    <>
       {colorValues.map((color) => {
         return (
-          <div key={color.label} className="flex">
-            <div className={cn("h-16 w-full", color.class)}></div>
+          <div key={color.label} className="grid grid-cols-2 gap-4">
+            <div className={cn("h-16", color.class)}></div>
             <div className="mt-4">
               <p className="text-white">{color.label}</p>
             </div>
           </div>
         );
       })}
-    </div>
+    </>
   );
 }
 

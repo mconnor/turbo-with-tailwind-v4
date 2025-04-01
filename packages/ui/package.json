@@ -1,11 +1,14 @@
 {
   "name": "@repo/ui",
   "version": "0.0.0",
+  "imports": {
+    "#*": "./src/*"
+  },
   "files": [
     "dist"
   ],
   "exports": {
-    "./styles.css": "./dist/index.css",
+    "./styles.css": "./dist/styles.css",
     "./Colors": "./src/Colors.tsx"
   },
   "license": "MIT",

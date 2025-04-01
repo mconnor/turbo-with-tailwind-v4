@@ -86,4 +86,4 @@ function Button({ children, href, variant, color }: ButtonProps) {
   );
 }
 
-export default Button
+export default Button;
