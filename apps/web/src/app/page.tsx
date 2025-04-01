@@ -1,5 +1,5 @@
-import { Colors } from "@repo/ui/Colors";
-import { Button } from "@repo/design-system/Button";
+import Colors from "@repo/ui/Colors";
+import Button from "@repo/design-system/Button";
 import { FaGithub, FaMedium } from "react-icons/fa";
 
 export default function Page() {

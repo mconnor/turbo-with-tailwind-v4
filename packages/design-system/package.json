@@ -2,25 +2,21 @@
   "name": "@repo/design-system",
   "version": "0.0.0",
   "license": "MIT",
-  "sideEffects": [
-    "**/*.css"
-  ],
+ 
   "files": [
     "dist"
   ],
   "exports": {
     "./theme.css": "./src/theme.css",
     "./styles.css": "./dist/styles.css",
-    "./Button": {
-      "import": "./dist/button.mjs",
-      "types": "./dist/button.d.mts"
-    }
+    "./Button": "./src/button.tsx"
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css && tsup",
-    "lint": "eslint src/",
+    "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css",
     "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css --watch",
+    "lint": "eslint src --max-warnings 0",
+    "fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
     "format": "prettier . --write"
   },

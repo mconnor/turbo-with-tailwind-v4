@@ -70,7 +70,7 @@ interface ButtonProps extends VariantProps<typeof buttonStyles> {
   href: string;
 }
 
-export function Button({ children, href, variant, color }: ButtonProps) {
+function Button({ children, href, variant, color }: ButtonProps) {
   return (
     <a
       className={cn(
@@ -85,3 +85,5 @@ export function Button({ children, href, variant, color }: ButtonProps) {
     </a>
   );
 }
+
+export default Button

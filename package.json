@@ -1,12 +1,12 @@
 {
   "name": "turbo-with-tailwind-v4",
   "private": true,
-  "scripts": {
-    "format-and-lint": "biome check .",
-    "format-and-lint:fix": "biome check . --write"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mconnor/turbo-with-tailwind-v4.git"
   },
+ 
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",

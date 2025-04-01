@@ -1,5 +1,6 @@
 import { cn } from "@repo/utils/cn";
 
+
 const colorsPrimary = [
   {
     label: 50,
@@ -94,7 +95,7 @@ const colorsSecondary = [
   },
 ];
 
-export function Colors({ secondary }: { secondary?: boolean }) {
+function Colors({ secondary }: { secondary?: boolean }) {
   const colorValues = secondary ? colorsSecondary : colorsPrimary;
   return (
     <div>
@@ -111,3 +112,5 @@ export function Colors({ secondary }: { secondary?: boolean }) {
     </div>
   );
 }
+
+export default Colors;
