@@ -3,27 +3,31 @@ import Layout from "#layouts/main.astro";
 import Colors from "@repo/ui/Colors";
 // Component Imports
 import Button from "@repo/design-system/Button";
-
+import Prose from "#components/Prose.astro";
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
 <Layout>
-  <div class="grid w-max place-items-center content-center">
-    <Button href="#" color="secondary">Tailwind Button in Astro!</Button>
-    <a href="/markdown-page" class="p-4 underline"
-      >Markdown is also supported...</a
-    >
-    <h2>Duis aliquip enim esse do officia occaecat.</h2>
-    <div class="flex flex-col md:flex-row">
-      <div class="w-full">
-        <p class="bg-black p-4 text-white">Custom Primary Colors</p>
-        <Colors />
-      </div>
-      <div class="w-full">
-        <p class="bg-black p-4 text-white">Custom Secondary Colors</p>
-        <Colors secondary />
+  <Prose>
+    <div class="bg-gray-500 p-4">
+      <Button href="#" color="secondary">Tailwind Button in Astro!</Button>
+      <a href="/markdown-page" class="p-4 underline"
+        >Markdown is also supported...</a
+      >
+
+      <h2>Duis aliquip enim esse do officia occaecat.</h2>
+
+      <div class="flex flex-col md:flex-row">
+        <div class="text-sm">
+          <h3 class="bg-black p-4 text-white">Custom Primary Colors</h3>
+          <Colors />
+        </div>
+        <div class="text-sm">
+          <h3 class="bg-black p-4 text-white">Custom Secondary Colors</h3>
+          <Colors secondary />
+        </div>
       </div>
     </div>
-  </div>
+  </Prose>
 </Layout>

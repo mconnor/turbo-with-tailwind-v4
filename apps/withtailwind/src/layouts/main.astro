@@ -1,17 +1,25 @@
 ---
 import Style from "#styles/Style.astro";
-
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>xxx</title>
-    <Style />
-  </head>
-  <body>
-    <slot />
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>xxx</title>
+  <Style />
+</head>
+<html>
+  <div class="flex min-h-screen flex-col">
+    <header class="bg-primary-800 p-4 text-white">
+      <h1 class="text-2xl">My Astro App</h1>
+    </header>
+    <main class="bg-primary-600 flex grow justify-center">
+      <slot />
+    </main>
+    <footer class="bg-primary-800 p-4 text-white">
+      <p>&copy; 2023 My Astro App</p>
+    </footer>
+  </div>
 </html>
+<!-- </div> -->

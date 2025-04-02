@@ -102,7 +102,7 @@ function Colors({ secondary }: { secondary?: boolean }) {
         return (
           <div key={color.label} className="grid grid-cols-2 gap-4">
             <div className={cn("h-16", color.class)}></div>
-            <div className="mt-4">
+            <div>
               <p className="text-white">{color.label}</p>
             </div>
           </div>
