@@ -9,5 +9,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [mdx(), react({ include: ["@repo/ui/*"] })],
+  integrations: [mdx(), react({ include: ["@repo/ui/*", "react - icons"] })],
 });

@@ -4,6 +4,7 @@ import Colors from "@repo/ui/Colors";
 // Component Imports
 import Button from "@repo/design-system/Button";
 import Prose from "#components/Prose.astro";
+import { FaGithub, FaMedium } from "react-icons/fa";
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
@@ -11,7 +12,19 @@ import Prose from "#components/Prose.astro";
 <Layout>
   <Prose>
     <div class="bg-gray-500 p-4">
-      <Button href="#" color="secondary">Tailwind Button in Astro!</Button>
+      <Button
+        href="https://medium.com/@philippbtrentmann/setting-up-tailwind-css-v4-in-a-turbo-monorepo-7688f3193039"
+      >
+        <span>Medium Article</span>
+        <FaMedium className="ml-2 inline-block" />
+      </Button>
+      <Button
+        href="https://github.com/philipptpunkt/turbo-with-tailwind-v4"
+        color="secondary"
+      >
+        <span>Github Repository</span>
+        <FaGithub className="ml-2 inline-block" />
+      </Button>
       <a href="/markdown-page" class="p-4 underline"
         >Markdown is also supported...</a
       >

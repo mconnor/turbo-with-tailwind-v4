@@ -1,7 +1,6 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-
   --font-script: Great Vibes, cursive;
   /* Color Paletts with https://www.colorpalett.es/ */
   /* Primary Color */
@@ -55,8 +54,6 @@
     --theme-color-text: var(--color-slate-50);
     --theme-color-background: var(--color-slate-900);
   }
-
-  
 }
 
 @layer components {

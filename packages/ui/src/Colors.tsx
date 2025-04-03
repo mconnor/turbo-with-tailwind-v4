@@ -98,6 +98,7 @@ function Colors({ secondary }: { secondary?: boolean }) {
   const colorValues = secondary ? colorsSecondary : colorsPrimary;
   return (
     <>
+      <p>Colors.tsx from @repo/ui</p>
       {colorValues.map((color) => {
         return (
           <div key={color.label} className="grid grid-cols-2 gap-4">
