@@ -18,5 +18,6 @@
         "tsup.config.json"
       ]
     }
-  ]
+  ],
+  "bun.runtime": "${workspaceFolder}/.vscode/mise-tools/bun"
 }

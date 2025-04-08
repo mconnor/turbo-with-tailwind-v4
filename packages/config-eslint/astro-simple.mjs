@@ -1,7 +1,7 @@
-import eslintPluginAstro from "eslint-plugin-astro";
-import tseslint from "typescript-eslint";
-import ignoresConfig from "./ignores.config.mjs";
-const extraFileExtensions = [".svelte", ".astro", ".md", ".mdx", "vue"];
+import eslintPluginAstro from 'eslint-plugin-astro';
+import tseslint from 'typescript-eslint';
+import ignoresConfig from './ignores.config.mjs';
+const extraFileExtensions = ['.svelte', '.astro', '.md', '.mdx', 'vue'];
 
 // export default [
 //   // add more generic rule sets here, such as:
@@ -16,7 +16,7 @@ const extraFileExtensions = [".svelte", ".astro", ".md", ".mdx", "vue"];
 // ];
 
 export default tseslint.config(ignoresConfig, {
-  files: ["**/*.astro"],
+  files: ['**/*.astro'],
   extends: [
     tseslint.configs.disableTypeChecked,
     ...eslintPluginAstro.configs.recommended,

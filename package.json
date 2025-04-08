@@ -5,14 +5,19 @@
     "type": "git",
     "url": "https://github.com/mconnor/turbo-with-tailwind-v4.git"
   },
+  "scripts": {
+    "new": "turbo gen workspace --copy",
+    "format:root": "prettier . --write",
+    "graph": "turbo run build --graph"
  
+  },
   "devDependencies": {
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "turbo": "^2.4.4"
+    "turbo": "^2.5.0"
   },
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.8.0",
   "engines": {
     "node": ">= 22.9.0",
     "pnpm": ">=9.1.2"

@@ -1,4 +1,4 @@
-@import "tailwindcss";
-@import "@repo/design-system/theme.css";
-@import "@repo/ui/styles.css";
+@import 'tailwindcss';
+@import '@repo/design-system/theme.css';
+@import '@repo/ui/styles.css';
 @plugin "@tailwindcss/typography";

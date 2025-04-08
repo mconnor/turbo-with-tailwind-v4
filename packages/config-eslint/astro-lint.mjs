@@ -1,23 +1,23 @@
 // @ts-check
-import js from "@eslint/js";
+import js from '@eslint/js';
 
-import eslintPluginAstro from "eslint-plugin-astro";
+import eslintPluginAstro from 'eslint-plugin-astro';
 // import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 
 // import onlyWarn from 'eslint-plugin-only-warn';
-import tseslint from "typescript-eslint";
+import tseslint from 'typescript-eslint';
 
-import astroParser from "astro-eslint-parser";
-import eslintConfigPrettier from "eslint-config-prettier";
-import globals from "globals";
-import ignoresConfig from "./ignores.config.mjs";
+import astroParser from 'astro-eslint-parser';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import globals from 'globals';
+import ignoresConfig from './ignores.config.mjs';
 
-const extraFileExtensions = [".astro", ".md", ".mdx"];
+const extraFileExtensions = ['.astro', '.md', '.mdx'];
 
 export default tseslint.config(
   ignoresConfig,
   {
-    name: "[*] global language options",
+    name: '[*] global language options',
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -37,11 +37,11 @@ export default tseslint.config(
   tseslint.configs.stylisticTypeChecked,
 
   {
-    name: "[*] TS Rules",
+    name: '[*] TS Rules',
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        sourceType: "module",
+        sourceType: 'module',
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
         extraFileExtensions,
@@ -52,17 +52,17 @@ export default tseslint.config(
       },
     },
     rules: {
-      "capitalized-comments": "off",
-      "@typescript-eslint/no-unsafe-call": "warn",
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/consistent-type-definitions": "warn",
+      'capitalized-comments': 'off',
+      '@typescript-eslint/no-unsafe-call': 'warn',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/consistent-type-definitions': 'warn',
     },
   },
 
   {
-    name: "[*] tseslint: disabled files",
-    files: ["**/*.astro"],
+    name: '[*] tseslint: disabled files',
+    files: ['**/*.astro'],
     extends: [
       eslintPluginAstro.configs.recommended,
       tseslint.configs.disableTypeChecked,
@@ -71,7 +71,7 @@ export default tseslint.config(
       parser: astroParser,
       parserOptions: {
         parser: tseslint.parser,
-        allowDefaultProject: ["*.astro"],
+        allowDefaultProject: ['*.astro'],
         JSX: false,
         // tsconfigRootDir: import.meta.dirname,
         // project: [
@@ -84,24 +84,24 @@ export default tseslint.config(
     },
   },
   {
-    name: "[*] .d.ts files",
-    files: ["**/*.d.ts"],
+    name: '[*] .d.ts files',
+    files: ['**/*.d.ts'],
     rules: {
-      "@typescript-eslint/triple-slash-reference": "off",
-      "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/consistent-type-definitions": "warn",
+      '@typescript-eslint/triple-slash-reference': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/consistent-type-definitions': 'warn',
     },
   },
   {
-    files: ["**/actions/*.ts"],
+    files: ['**/actions/*.ts'],
     rules: {
-      "@typescript-eslint/no-misused-promises": "off",
+      '@typescript-eslint/no-misused-promises': 'off',
     },
   },
 
   {
-    name: "[*] js files",
-    files: ["**/*.js"],
+    name: '[*] js files',
+    files: ['**/*.js'],
     extends: [tseslint.configs.disableTypeChecked],
   },
 
