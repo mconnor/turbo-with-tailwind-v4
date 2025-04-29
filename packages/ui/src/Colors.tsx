@@ -1,8 +1,4 @@
-
-
 import { cn } from '@repo/utils/cn';
-
-
 
 const colorsPrimary = [
   {

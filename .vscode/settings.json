@@ -8,7 +8,7 @@
     "*.css": "tailwindcss"
   },
   "debug.javascript.defaultRuntimeExecutable": {
-    "pwa-node": "${workspaceFolder}/.vscode/mise-tools/node"
+    "pwa-node": "/Users/mikeconnor/.local/share/mise/shims/node"
   },
   "json.schemas": [
     {
