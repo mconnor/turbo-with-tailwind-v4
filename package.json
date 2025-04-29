@@ -9,15 +9,14 @@
     "new": "turbo gen workspace --copy",
     "format:root": "prettier . --write",
     "graph": "turbo run build --graph"
- 
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "turbo": "^2.5.0"
+    "prettier": "catalog:",
+    "prettier-plugin-astro": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "turbo": "catalog:"
   },
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">= 22.9.0",
     "pnpm": ">=9.1.2"

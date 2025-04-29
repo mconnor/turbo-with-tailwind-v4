@@ -16,23 +16,23 @@
   "dependencies": {
     "@repo/design-system": "workspace:*",
     "@repo/ui": "workspace:*",
-    "@tailwindcss/postcss": "^4.1.3",
+    "@tailwindcss/postcss": "catalog:",
     "next": "^15.2.4",
-    "postcss": "^8.5.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0",
-    "tailwindcss": "^4.1.3"
+    "postcss": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-icons": "catalog:",
+    "tailwindcss": "catalog:"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.2.4",
+    "@next/eslint-plugin-next": "catalog:",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "typescript": "^5.8.3"
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "typescript": "catalog:"
   }
 }

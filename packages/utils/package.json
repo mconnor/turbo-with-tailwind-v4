@@ -12,13 +12,13 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.2.0"
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "eslint": "^9.24.0",
-    "typescript": "^5.8.3"
+    "eslint": "catalog:",
+    "typescript": "catalog:"
   }
 }
