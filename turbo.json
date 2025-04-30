@@ -30,10 +30,15 @@
     "type-check": {
       "dependsOn": ["transit"]
     },
+    "astro-check": {
+      "inputs": ["**/*.{astro,ts,tsx,js,jsx}"],
+      "cache": true,
+      "dependsOn": ["transit"]
+    },
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": ["^build"]
+      "dependsOn": ["^clean", "^build"]
     },
     "clean": {
       "cache": false
@@ -41,5 +46,6 @@
     "format": {},
         "//#format:root": {},
     "format:check": {}
-}
+  }
+
 }

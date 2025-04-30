@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/ui-astro",
   "version": "0.0.0",
   "imports": {
     "#*": "./src/*"
@@ -9,10 +9,11 @@
   ],
   "exports": {
     "./styles.css": "./dist/styles.css",
-    "./Colors": "./src/Colors.tsx"
+    "./ColorsAstro": "./src/Colors.astro"
   },
   "license": "MIT",
   "scripts": {
+    "astro-check": "astro check",
     "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css ",
     "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css  --watch",
     "lint": "eslint src --max-warnings 0",
@@ -22,18 +23,19 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "eslint": "catalog:",
-    "prettier": "catalog:",
-    "prettier-plugin-tailwindcss": "catalog:",
-    "typescript": "catalog:",
     "@tailwindcss/cli": "catalog:",
     "@tailwindcss/postcss": "catalog:",
+    "astro": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
     "tailwindcss": "catalog:",
-    "postcss": "catalog:"
+    "typescript": "catalog:"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@repo/design-system": "workspace:*",
-    "@repo/utils": "workspace:*",
-    "react": "catalog:"
+    "@repo/utils": "workspace:*"
   }
 }

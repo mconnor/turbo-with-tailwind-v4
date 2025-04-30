@@ -1,0 +1,12 @@
+{
+  "extends": "@repo/typescript-config/astro-base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

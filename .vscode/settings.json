@@ -19,5 +19,6 @@
       ]
     }
   ],
-  "bun.runtime": "${workspaceFolder}/.vscode/mise-tools/bun"
+  "bun.runtime": "${workspaceFolder}/.vscode/mise-tools/bun",
+  "python.defaultInterpreterPath": "/Users/mikeconnor/.local/share/mise/installs/python/3.13.3/bin/python"
 }

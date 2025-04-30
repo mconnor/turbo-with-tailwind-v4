@@ -7,6 +7,9 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   vite: {
+    ssr: {
+      noExternal: ['tailwindcss', '@tailwindcss/typography'],
+    },
     plugins: [tailwindcss()],
   },
   integrations: [mdx(), react({ include: ['@repo/ui/*', 'react - icons'] })],

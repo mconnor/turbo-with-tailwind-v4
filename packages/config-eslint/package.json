@@ -2,13 +2,14 @@
   "name": "@repo/eslint-config",
   "version": "0.0.2",
   "type": "module",
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
   "private": true,
   "imports": {
     "#*": "./*"
   },
-  "scripts": {
-    "format": "prettier . --write"
-  },
+
   "exports": {
     "./*": "./*.mjs",
     "./astro-lint": "./astro-lint.mjs",
@@ -22,7 +23,6 @@
     "@eslint/markdown": "catalog:",
     "@logux/eslint-config": "catalog:",
     "@next/eslint-plugin-next": "catalog:",
-    "@vercel/style-guide": "catalog:",
     "astro-eslint-parser": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
