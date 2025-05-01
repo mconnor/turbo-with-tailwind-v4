@@ -40,6 +40,10 @@
       "persistent": true,
       "dependsOn": ["^clean", "^build"]
     },
+    "preview": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
     "clean": {
       "cache": false
     },

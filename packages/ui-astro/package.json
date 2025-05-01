@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist",
     "astro-check": "astro check",
     "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css ",
     "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css  --watch",
@@ -24,18 +25,20 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/cli": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
+
+    "@tailwindcss/vite": "catalog:",
     "astro": "catalog:",
     "eslint": "catalog:",
-    "postcss": "catalog:",
+
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
-    "tailwindcss": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "^6.3.4"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@repo/design-system": "workspace:*",
-    "@repo/utils": "workspace:*"
+    "@repo/utils": "workspace:*",
+    "tailwindcss": "catalog:"
   }
 }

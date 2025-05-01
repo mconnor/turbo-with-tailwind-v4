@@ -468,6 +468,9 @@ importers:
       '@repo/utils':
         specifier: workspace:*
         version: link:../utils
+      tailwindcss:
+        specifier: 'catalog:'
+        version: 4.1.5
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -478,30 +481,27 @@ importers:
       '@tailwindcss/cli':
         specifier: 'catalog:'
         version: 4.1.5
-      '@tailwindcss/postcss':
+      '@tailwindcss/vite':
         specifier: 'catalog:'
-        version: 4.1.5
+        version: 4.1.5(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1))
       astro:
         specifier: 'catalog:'
         version: 5.7.10(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.1)(typescript@5.8.3)(yaml@2.7.1)
       eslint:
         specifier: 'catalog:'
         version: 9.25.1(jiti@2.4.2)
-      postcss:
-        specifier: 'catalog:'
-        version: 8.5.3
       prettier:
         specifier: 'catalog:'
         version: 3.5.3
       prettier-plugin-tailwindcss:
         specifier: 'catalog:'
         version: 0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.5.3)
-      tailwindcss:
-        specifier: 'catalog:'
-        version: 4.1.5
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
+      vite:
+        specifier: ^6.3.4
+        version: 6.3.4(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1)
 
   packages/utils:
     dependencies:
