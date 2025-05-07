@@ -1,4 +1,4 @@
-import Colors from "@repo/ui/Colors";
+import Colors from "@repo/ui-react/Colors";
 import Button from "@repo/design-system/Button";
 import { FaGithub, FaMedium } from "react-icons/fa";
 
@@ -40,7 +40,7 @@ export default function Page() {
         </div>
         <div className="w-full">
           <p className="bg-black p-4 text-white">Custom Secondary Colors</p>
-          <Colors secondary />
+          <Colors prime />
         </div>
       </div>
     </main>

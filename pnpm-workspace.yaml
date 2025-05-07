@@ -5,32 +5,33 @@ catalog:
   "@astrojs/mdx": ^4.2.6
   "@astrojs/react": ^4.2.7
   "@eslint/eslintrc": ^3.3.1
-  "@eslint/js": ^9.25.1
+  "@eslint/js": ^9.26.0
   "@eslint/markdown": ^6.4.0
   "@logux/eslint-config": ^55.2.1
-  "@next/eslint-plugin-next": ^15.3.1
+  "@next/eslint-plugin-next": ^15.3.2
   "@tailwindcss/cli": ^4.1.5
   "@tailwindcss/postcss": ^4.1.5
   "@tailwindcss/typography": ^0.5.16
   "@tailwindcss/vite": ^4.1.5
   "@types/canvas-confetti": ^1.9.0
-  "@types/node": ^22.15.3
-  "@types/react": ^19.1.2
+  "@types/node": ^22.15.15
+  "@types/react": ^19.1.3
   "@types/react-dom": ^19.1.3
-  astro: ^5.7.10
+  astro: ^5.7.11
   astro-eslint-parser: ^1.2.2
   canvas-confetti: ^1.9.3
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
-  eslint: ^9.25.1
-  eslint-config-next: 15.3.1
-  eslint-config-prettier: ^10.1.2
+  eslint: ^9.26.0
+  eslint-config-next: ^15.3.2
+  eslint-config-prettier: ^10.1.3
   eslint-plugin-astro: ^1.3.1
   eslint-plugin-only-warn: ^1.1.0
   eslint-plugin-react: ^7.37.5
   eslint-plugin-react-hooks: ^5.2.0
-  eslint-plugin-turbo: ^2.5.2
-  globals: ^16.0.0
+  eslint-plugin-turbo: ^2.5.3
+  globals: ^16.1.0
+  next: ^15.3.2
   postcss: ^8.5.3
   prettier: ^3.5.3
   prettier-plugin-astro: ^0.14.1
@@ -41,9 +42,11 @@ catalog:
   tailwind-merge: ^3.2.0
   tailwindcss: ^4.1.5
   typescript: ^5.8.3
-  typescript-eslint: ^8.31.1
+  typescript-eslint: ^8.32.0
+  vite: "^6.3.4"
 onlyBuiltDependencies:
   - "@parcel/watcher"
+  - core-js
   - esbuild
   - sharp
   - unrs-resolver

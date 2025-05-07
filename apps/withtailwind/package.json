@@ -19,7 +19,6 @@
     "@astrojs/mdx": "catalog:",
     "@astrojs/react": "catalog:",
     "@repo/design-system": "workspace:*",
-    "@repo/ui": "workspace:*",
     "@repo/ui-astro": "workspace:*",
     "@tailwindcss/vite": "catalog:",
     "@types/canvas-confetti": "catalog:",

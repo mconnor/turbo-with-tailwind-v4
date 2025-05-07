@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import '@repo/design-system/theme.css';
-@import '@repo/ui/styles.css';
+@import '@repo/design-system/index.css';
+
 @import '@repo/ui-astro/styles.css';
 @plugin "@tailwindcss/typography";

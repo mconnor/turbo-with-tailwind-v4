@@ -9,14 +9,14 @@
   ],
   "exports": {
     "./styles.css": "./dist/styles.css",
-    "./ColorsAstro": "./src/Colors.astro"
+    "./*": "./src/*.astro"
   },
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
     "astro-check": "astro check",
-    "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css ",
-    "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css  --watch",
+    "build": "pnpm run clean && npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css ",
+    "dev": "pnpm run clean && npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css  --watch",
     "lint": "eslint src --max-warnings 0",
     "type-check": "tsc --noEmit",
     "format": "prettier . --write"
@@ -25,20 +25,21 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/cli": "catalog:",
-
     "@tailwindcss/vite": "catalog:",
     "astro": "catalog:",
     "eslint": "catalog:",
-
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
     "typescript": "catalog:",
-    "vite": "^6.3.4"
+    "vite": "catalog:"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@repo/design-system": "workspace:*",
-    "@repo/utils": "workspace:*",
     "tailwindcss": "catalog:"
+  },
+  "peerDependencies": {
+    "tailwind": ">=4",
+    "astro": ">=5"
   }
 }

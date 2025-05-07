@@ -1,7 +1,7 @@
 ---
 import Layout from '#layouts/Layout.astro';
 // import Colors from '@repo/ui/Colors';
-import ColorsAstro from '@repo/ui-astro/ColorsAstro';
+import ColorsAstro from '@repo/ui-astro/Colors';
 // Component Imports
 // import Button from '@repo/design-system/Button';
 // import Prose from '#components/Prose.astro';
@@ -12,13 +12,29 @@ import ColorsAstro from '@repo/ui-astro/ColorsAstro';
 
 <Layout>
   <h2 class="bg-yellow-400">Asto swatch</h2>
+  <div class="grid grid-cols-2 gap-4 py-8">
+    <div class="primary border-4"><ColorsAstro prime /></div>
+    <div class="border-4"><ColorsAstro textCol="red" /></div>
+  </div>
 
-    <div class="grid w-full grid-cols-3 gap-4">
-      <ColorsAstro />
-      <ColorsAstro />
-      <ColorsAstro />
-    </div>
-
-
-
+  <!-- <div class="grid grid-cols-[200px_minmax(300px,_1fr)_200px] gap-4">
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+    <div class="border-1 bg-blue-500 px-4 py-8">1</div>
+  </div> -->
+  <!-- <div class="grid w-full grid-cols-3 gapx-4 py-8">
+    <div class="boder-4"><ColorsAstro prime /></div>
+    <div class="boder-4"><ColorsAstro /></div>
+  </div> -->
 </Layout>

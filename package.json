@@ -14,7 +14,7 @@
     "prettier": "catalog:",
     "prettier-plugin-astro": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
-    "turbo": "^2.5.2"
+    "turbo": "^2.5.3"
   },
   "packageManager": "pnpm@10.10.0",
   "engines": {

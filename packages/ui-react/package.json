@@ -1,0 +1,46 @@
+{
+  "name": "@repo/ui-react",
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./styles.css": "./dist/index.css",
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "build:styles": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/index.css",
+    "build:components": "tsup",
+    "dev:styles": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/index.css --watch",
+    "dev:components": "tsup --watch",
+    "lint": "eslint src --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/cli": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
+    "eslint": "catalog:",
+    "postcss": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "tsup": "^8.4.0",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@repo/design-system": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "react": "catalog:"
+  },
+  "peerDependencies": {
+    "tailwind": ">=4"
+  }
+}

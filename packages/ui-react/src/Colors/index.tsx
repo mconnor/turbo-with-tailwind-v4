@@ -1,9 +1,10 @@
----
+import { cn } from '@repo/utils/cn';
+
 interface Props {
   prime?: boolean;
   textCol?: 'blue' | 'red' | 'yellow';
 }
-const numArr = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
+
 const colorsPrimary = [
   {
     label: 50,
@@ -98,31 +99,31 @@ const colorsAccent = [
   },
 ];
 
-const { prime, textCol = 'blue' } = Astro.props;
-
-const colors = prime ? colorsPrimary : colorsAccent;
-const title: string = prime ? 'Primary Colors' : 'Accent Colors';
-
 const colorVariants = {
   blue: 'hover:bg-blue-500 text-blue-600',
   red: 'hover:bg-red-400 text-red-600',
   yellow: 'hover:bg-yellow-400 text-yellow-600',
 };
----
 
-<h2 class="text-5xl">@repo/ui-astro/Colors</h2>
-<h3 class="text-xl">{title}</h3>
-{
-  colors.map(({ label, class: className }) => (
-    <div class={className}>
-      <p class:list={['text-4xl font-bold', colorVariants[textCol]]}>{label}</p>
-    </div>
-  ))
+function Colors({ prime, textCol = 'blue' }: Props) {
+  const colors = prime ? colorsPrimary : colorsAccent;
+  const title: string = prime ? 'Primary Colors' : 'Accent Colors';
+  return (
+    <>
+      <h2 className="text-5xl">@repo/ui-react/Colors</h2>
+      <h3 className="text-xl">{title}</h3>
+      {colors.map(({ label, class: className }) => {
+        return (
+          <div key={label} className={className}>
+            {/* <p className={['text-4xl font-bold', colorVariants[textCol]]}></p> */}
+            <p className={cn('text-4xl font-bold', colorVariants[textCol])}>
+              {label}
+            </p>
+          </div>
+        );
+      })}
+    </>
+  );
 }
-<!-- {
-  numArr.map((num) => (
-    <div class:list={[prime ? `bg-primary-${num}` : `bg-accent-${num}`]}>
-      <p class="text-4xl font-bold text-yellow-600">{num}</p>
-    </div>
-  ))
-} -->
+
+export default Colors;
