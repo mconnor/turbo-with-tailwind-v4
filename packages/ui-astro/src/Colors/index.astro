@@ -110,19 +110,14 @@ const colorVariants = {
 };
 ---
 
-<h2 class="text-5xl">@repo/ui-astro/Colors</h2>
-<h3 class="text-xl">{title}</h3>
+<h2 class="bg-primary-100 dark:bg-primary-900">@repo/ui-astro/Colors</h2>
+<h3 class="text-3xl">{title}</h3>
 {
   colors.map(({ label, class: className }) => (
     <div class={className}>
-      <p class:list={['text-4xl font-bold', colorVariants[textCol]]}>{label}</p>
+      <p class:list={['text-sm font-bold sm:text-5xl', colorVariants[textCol]]}>
+        {label}
+      </p>
     </div>
   ))
 }
-<!-- {
-  numArr.map((num) => (
-    <div class:list={[prime ? `bg-primary-${num}` : `bg-accent-${num}`]}>
-      <p class="text-4xl font-bold text-yellow-600">{num}</p>
-    </div>
-  ))
-} -->

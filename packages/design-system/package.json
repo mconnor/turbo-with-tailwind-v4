@@ -2,17 +2,10 @@
   "name": "@repo/design-system",
   "version": "0.0.0",
   "license": "MIT",
-  "imports": {
-    "#*": "./src/*"
-  },
   "exports": {
-    "./index.css": "./src/styles.css",
-    "./Button": "./src/button.tsx"
+    "./shared-styles.css": "./shared-styles.css"
   },
   "scripts": {
-    "lint": "eslint src --max-warnings 0",
-    "fix": "eslint . --fix",
-    "type-check": "tsc --noEmit",
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
@@ -20,20 +13,12 @@
     "tailwindcss": "^4"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/react": "catalog:",
-    "eslint": "catalog:",
     "prettier": "catalog:",
-    "prettier-plugin-tailwindcss": "catalog:",
-    "typescript": "catalog:"
+    "prettier-plugin-tailwindcss": "catalog:"
   },
   "dependencies": {
-    "@repo/utils": "workspace:*",
     "@tailwindcss/cli": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
-    "class-variance-authority": "catalog:",
-    "postcss": "catalog:",
     "tailwindcss": "catalog:"
   }
 }
