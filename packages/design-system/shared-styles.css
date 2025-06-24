@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @theme {
-  /* --font-hero: var(--font-transitional);
-  --font-display: "Oswald", "sans-serif"; */
 
   --font-display: "Satoshi", "sans-serif";
 
@@ -22,12 +20,7 @@
   --s7: calc(var(--s0) * pow(var(--ratio), 7));
   --s8: calc(var(--s0) * pow(var(--ratio), 8));
 
-  /* theme variables defined in the --font-* namespace determine
-   all of the font-family utilities that exist in a project: */
-  /* --font-sans: InterVariable, sans-serif; */
-  /* --font-display: var(--font-transitional);
-  --font-script: var(--font-handwritten);
-  --font-poppins: Poppins, sans-serif; */
+
 
   --color-avocado-100: oklch(0.99 0 0);
   --color-avocado-200: oklch(0.98 0.04 113.22);
@@ -60,13 +53,4 @@
   --color-primary-900: oklch(21.6% 0.006 56.043);
   --color-primary-950: oklch(14.7% 0.004 49.25);
 
-  /* --color-mint-500: oklch(0.72 0.11 178); */
-
-  /* --ratio: 1.618;
-  --h0: 10;
-  --h1: calc(80vh / var(--h0) * pow(var(--ratio), 1));
-  --h2: calc(80vh / var(--h0) * pow(var(--ratio), 2));
-  --h3: calc(80vh / var(--h0) * pow(var(--ratio), 3));
-  --h4: calc(80vh / var(--h0) * pow(var(--ratio), 4));
-  --h5: calc(80vh / var(--h0) * pow(var(--ratio), 5)); */
 }

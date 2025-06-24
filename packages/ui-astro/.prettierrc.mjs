@@ -2,7 +2,7 @@
 /** @type {import("prettier").Config} */
 const config = {
   plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
-  tailwindStylesheet: './src/styles/global.css',
+  tailwindStylesheet: './src/styles.css',
   overrides: [
     {
       files: '*.astro',
