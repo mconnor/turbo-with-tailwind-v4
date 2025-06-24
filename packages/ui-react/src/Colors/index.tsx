@@ -1,4 +1,4 @@
-import { cn } from '@repo/utils/cn';
+import cn from '@repo/utils/cn';
 
 interface Props {
   prime?: boolean;
@@ -111,7 +111,7 @@ function Colors({ prime, textCol = 'blue' }: Props) {
   return (
     <>
       <h2 className="text-5xl">@repo/ui-react/Colors</h2>
-      <h3 className="text-xl">{title}</h3>
+      <h3 className="text-[--s8]">{title}</h3>
       {colors.map(({ label, class: className }) => {
         return (
           <div key={label} className={className}>

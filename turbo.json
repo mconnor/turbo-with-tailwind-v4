@@ -1,13 +1,9 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-
     "build": {
       "dependsOn": ["^build"],
-      "env": [
-        "MY_API_URL",
-        "MY_API_KEY"
-      ],
+      "env": ["MY_API_URL", "MY_API_KEY"],
       "inputs": [
         "$TURBO_DEFAULT$",
         ".env.production.local",
@@ -38,7 +34,7 @@
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": ["^clean", "^build"]
+      "dependsOn": ["^build"]
     },
     "preview": {
       "cache": false,
@@ -48,8 +44,7 @@
       "cache": false
     },
     "format": {},
-        "//#format:root": {},
+    "//#format:root": {},
     "format:check": {}
   }
-
 }

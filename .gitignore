@@ -47,3 +47,4 @@ dist/
 
 # Built Visual Studio Code Extensions
 *.vsix
+/mise.toml
