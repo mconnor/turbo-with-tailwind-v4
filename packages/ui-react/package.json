@@ -26,14 +26,15 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/cli": "catalog:",
+    "@types/react": "catalog:",
     "eslint": "catalog:",
     "postcss": "catalog:",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
     "tailwindcss": "catalog:",
     "tsup": "^8.4.0",
-    "vite": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "catalog:"
   },
   "dependencies": {
     "@repo/design-system": "workspace:*",
