@@ -1,24 +1,31 @@
 {
   "name": "@repo/design-system",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "type": "module",
   "license": "MIT",
   "exports": {
-    "./shared-styles.css": "./shared-styles.css"
+    ".": "./shared-styles.css",
+    "./postcss": "./postcss.config.mjs",
+    "./viteReactConfig": "./vite-react.config.mjs"
   },
   "scripts": {
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
   "peerDependencies": {
-    "tailwindcss": "^4"
+    "tailwindcss": "catalog:",
+    "vite": "catalog:"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
+    "@tailwindcss/vite": "catalog:",
+    "tailwindcss": "catalog:",
+    "@vitejs/plugin-react": "catalog:"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "catalog:",
-    "tailwindcss": "catalog:"
   }
 }

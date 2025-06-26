@@ -18,6 +18,7 @@
   "dependencies": {
     "@astrojs/mdx": "catalog:",
     "@astrojs/react": "catalog:",
+    "@astrojs/check": "catalog:",
     "@repo/design-system": "workspace:*",
     "@repo/ui-astro": "workspace:*",
     "@tailwindcss/vite": "catalog:",
