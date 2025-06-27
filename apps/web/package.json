@@ -1,6 +1,7 @@
 {
   "name": "@app/web",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "type": "module",
   "private": true,
   "imports": {
     "#*": "./src/app/*"
@@ -16,7 +17,7 @@
   "dependencies": {
     "@repo/design-system": "workspace:*",
     "@repo/ui-react": "workspace:*",
-    "next": "^15.3.1",
+    "next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
     "react-icons": "catalog:"
@@ -25,15 +26,12 @@
     "@next/eslint-plugin-next": "catalog:",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "catalog:",
-    "@types/react": "catalog:",
-    "@types/react-dom": "catalog:",
+    "daisyui": "catalog:",
     "eslint": "catalog:",
-    "@tailwindcss/postcss": "catalog:",
     "tailwindcss": "catalog:",
-    "postcss": "catalog:",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
+    "vite": "catalog:",
     "typescript": "catalog:"
   }
 }

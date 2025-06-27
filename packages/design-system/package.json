@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "exports": {
-    "./shared-styles.css": "./shared-styles.css",
+    "./shared-styles.css": "./css/shared-styles.css",
     "./postcss": "./postcss.config.mjs",
     "./viteConfig": "./vite.config.js",
     "./viteReactConfig": "./vite-react.config.mjs"

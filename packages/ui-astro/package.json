@@ -21,6 +21,7 @@
     "format": "prettier . --write"
   },
   "devDependencies": {
+     "tailwindcss": "catalog:",
     "@repo/design-system": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",

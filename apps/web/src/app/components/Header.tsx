@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
 interface HeaderProps {
@@ -14,14 +14,14 @@ interface HeaderProps {
 }
 
 export default function Header({
-  title = "Your App",
+  title = 'Your App',
   logoSrc,
   navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/about', current: false },
     { name: 'Services', href: '/services', current: false },
     { name: 'Contact', href: '/contact', current: false },
-  ]
+  ],
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,35 +30,33 @@ export default function Header({
   };
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="border-b border-gray-200 bg-white shadow-sm">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo and Title */}
           <div className="flex items-center">
             {logoSrc && (
               <Image
-                className="h-8 w-auto mr-3"
+                className="mr-3 h-8 w-auto"
                 src={logoSrc}
                 alt="Logo"
                 width={32}
                 height={32}
               />
             )}
-            <h1 className="text-xl font-bold text-gray-900">
-              {title}
-            </h1>
+            <h1 className="text-xl font-bold text-gray-900">{title}</h1>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden space-x-8 md:flex">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 className={`${
-                  item.current
-                    ? 'text-blue-600 border-b-2 border-blue-600'
-                    : 'text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600'
+                  item.current ?
+                    'border-b-2 border-blue-600 text-blue-600'
+                  : 'text-gray-700 hover:border-b-2 hover:border-blue-600 hover:text-blue-600'
                 } px-3 py-2 text-sm font-medium transition-colors duration-200 ease-in-out`}
               >
                 {item.name}
@@ -71,38 +69,38 @@ export default function Header({
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {/* Hamburger icon */}
               <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6 stroke-current stroke-2`}
+                xmlns="http://www.w3.org/2000/svg fill-none"
+                // fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                // stroke="currentColor"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  // strokeWidth={2}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
               {/* Close icon */}
               <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
+                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6 fill-none stroke-current stroke-2`}
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                // fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                // stroke="currentColor"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  // strokeWidth={2}
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
@@ -112,16 +110,19 @@ export default function Header({
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 border-t border-gray-200">
+      <div
+        className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}
+        id="mobile-menu"
+      >
+        <div className="space-y-1 border-t border-gray-200 bg-gray-50 px-2 pb-3 pt-2 sm:px-3">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={`${
-                item.current
-                  ? 'bg-blue-50 text-blue-600 border-l-4 border-blue-600'
-                  : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'
+                item.current ?
+                  'border-l-4 border-blue-600 bg-blue-50 text-blue-600'
+                : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'
               } block px-3 py-2 text-base font-medium transition-colors duration-200 ease-in-out`}
               onClick={() => setIsMenuOpen(false)}
             >

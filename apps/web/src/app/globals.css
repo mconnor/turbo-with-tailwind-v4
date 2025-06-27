@@ -1,3 +1,11 @@
-@import "tailwindcss";
-@import "@repo/design-system/shared-styles.css";
-@import "@repo/ui-react/styles.css";
+@import 'tailwindcss';
+
+/* @source '@repo/ui-react'; */
+@source not '@repo/eslint-config';
+@source not '@repo/typescript-config';
+@source not '@repo/ui-astro';
+
+@import '@repo/design-system/shared-styles.css';
+@import '@repo/ui-react/styles.css';
+@plugin "daisyui" {
+}

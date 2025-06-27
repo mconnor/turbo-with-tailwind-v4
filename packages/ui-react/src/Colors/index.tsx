@@ -114,7 +114,7 @@ function Colors({ prime, textCol = 'blue' }: Props) {
       <h3 className="text-[--s8]">{title}</h3>
       {colors.map(({ label, class: className }) => {
         return (
-          <div key={label} className={className}>
+          <div key={label} className={`$className`}>
             {/* <p className={['text-4xl font-bold', colorVariants[textCol]]}></p> */}
             <p className={cn('text-4xl font-bold', colorVariants[textCol])}>
               {label}
