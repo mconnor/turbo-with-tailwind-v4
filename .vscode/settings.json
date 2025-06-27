@@ -4,9 +4,57 @@
       "mode": "auto"
     }
   ],
-  "files.associations": {
-    "*.css": "tailwindcss"
+
+  // TailwindCSS Configuration
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "tailwindcss",
+    "astro": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "markdown": "html",
+    "postcss": "css"
   },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "class:list",
+    "tw",
+    "twx"
+  ],
+  "tailwindCSS.classFunctions": ["tw", "clsx"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "tailwindCSS.files.exclude": ["**/node_modules/**", "**/dist/**"],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.validate": true,
+  "tailwindCSS.showPixelEquivalents": true,
+  "tailwindCSS.colorDecorators": true,
+  "tailwindCSS.lint.invalidApply": "error",
+  "tailwindCSS.lint.invalidScreen": "warning",
+  "tailwindCSS.lint.cssConflict": "warning",
+  "emmet.includeLanguages": {
+    "plaintext": "tailwindcss",
+    "astro": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "markdown": "html",
+    "postcss": "css"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.json": "jsonc"
+  },
+    "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact",
+  ],
   "debug.javascript.defaultRuntimeExecutable": {
     "pwa-node": "/Users/mikeconnor/.local/share/mise/shims/node"
   },
@@ -19,6 +67,43 @@
       ]
     }
   ],
+    "mcp": {
+    "inputs": [],
+    "servers": {
+      "Context7": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@upstash/context7-mcp@latest"]
+      },
+      "filesystem": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"]
+      },
+      "github": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-github"]
+      }
+    }
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "bun.runtime": "${workspaceFolder}/.vscode/mise-tools/bun",
   "python.defaultInterpreterPath": "/Users/mikeconnor/.local/share/mise/installs/python/3.13.3/bin/python"
 }

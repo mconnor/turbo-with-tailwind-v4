@@ -1,12 +1,13 @@
-@import 'tailwindcss';
 
+@import "tailwindcss" source("../../");
 /* @source "../node_modules/@repo/ui-astro"; */
 /* @import '@repo/ui-astro/styles.css'; */
 /* @import 'open-props/style'; */
 
-@source "@repo/packages/ui-astro";
+/* @source "@repo/packages/ui-astro"; */
 
-@import '@repo/design-system';
+@import '@repo/design-system/shared-styles.css';
 @import '@repo/ui-astro/styles.css';
+
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
