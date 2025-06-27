@@ -1,5 +1,4 @@
-
-@import "tailwindcss" source("../../");
+@import 'tailwindcss';
 /* @source "../node_modules/@repo/ui-astro"; */
 /* @import '@repo/ui-astro/styles.css'; */
 /* @import 'open-props/style'; */

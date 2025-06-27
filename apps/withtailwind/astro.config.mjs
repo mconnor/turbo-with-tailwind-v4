@@ -8,9 +8,9 @@ import react from '@astrojs/react';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    ssr: {
-      noExternal: ['tailwindcss','@repo/ui-react'],
-    },
+    // ssr: {
+    //   noExternal: ['tailwindcss','@repo/ui-react'],
+    // },
   },
   integrations: [mdx(), react({ include: ['@repo/ui/*', 'react - icons'] })],
 });

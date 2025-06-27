@@ -8,6 +8,7 @@
   "scripts": {
     "astro-check": "astro check",
     "lint": "eslint .",
+    "fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
     "format": "prettier . --write",
     "dev": "astro dev",

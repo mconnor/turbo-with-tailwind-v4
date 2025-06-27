@@ -11,7 +11,7 @@
         ".env.production",
         ".env"
       ],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "transit": {
       "dependsOn": ["^transit"]
@@ -44,6 +44,7 @@
       "cache": false
     },
     "format": {},
+    "start": {},
     "//#format:root": {},
     "format:check": {}
   }

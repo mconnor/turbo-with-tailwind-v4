@@ -9,6 +9,7 @@
     "./cn": "./src/cn.ts"
   },
   "scripts": {
+    "lint": "eslint . --max-warnings 0",
     "format": "prettier . --write"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "tailwind-merge": "catalog:"
   },
   "devDependencies": {
+    "prettier": "catalog:",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "eslint": "catalog:",

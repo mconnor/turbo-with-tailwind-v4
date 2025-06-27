@@ -1,6 +1,8 @@
 {
   "extends": "@repo/typescript-config/astro-base",
   "compilerOptions": {
+    "rootDir": "${configDir}/src",
+    "baseUrl": ".",
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },
